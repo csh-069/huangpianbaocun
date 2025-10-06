@@ -1,9 +1,54 @@
-<h1>你好</h1>
-<p>nihao</p>
-<div>爱你
-<video width="640" height="360" controls>
-  <source src="E:\kj\1_5161147605580777440.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  您的浏览器不支持HTML5视频播放。
-</video>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+         margin: 0;
+         height: 100vh;
+         background-color: #eee;
+      }
+      *{
+         border: 1px solid black;
+      }
+      .flex{
+         display: flex;
+      }
+      .baiSe{
+         background-color: white;
+      }
+      .flex{
+         flex: 1;
+      }
+      .columu{
+         flex-direction: column;
+      }
+    </style>
+ </head>
+ <body class="flex">
+   <!-- 侧边栏 -->
+    <div style="width: 200px; class="baiSe">
+      <a href="https://space.bilibili.com/316352154?spm_id_from=333.1007.0.0">请关注喵，谢谢喵</a>
+   </div>
+    <!-- 主区域-->
+    <div class="flex1 flex columu">
+      <!-- 头部栏-->
+<div style="height: 60px; color: #428942;" class="baiSe">总之非常爱你</div>
+<!-- 内容栏-->
+<div class="flex1 flex">
+   <!--左区-->
+   <div style="flex:3;" class="flex column">
+      <!--数据区-->
+   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/custom-thumb/img/2024/09/04/00/00/54/122115657_p0_custom1200.jpg" width="250px" height="250px"></div>
+   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/img-master/img/2019/02/11/00/00/03/73111581_p0_square1200.jpg" width="250px" height="250px"></div>
+   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/img-master/img/2017/07/07/00/18/56/63738701_p0_square1200.jpg" width="250px" height="250px"></div>
+   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/custom-thumb/img/2025/10/01/00/00/29/135729737_p0_custom1200.jpg" width="250px" height="250px"></div>
 </div>
+   <!--右区-->
+   <div style="flex:1;" class="flex column"></div>
+</div>
+    </div>
+ </body> 
+ </html>
