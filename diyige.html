@@ -10,26 +10,35 @@
          height: 100vh;
          background-color: #eee;
       }
-      *{
+      /* *{
          border: 1px solid black;
-      }
+      } */
       .flex{
          display: flex;
       }
       .baiSe{
          background-color: white;
       }
-      .flex{
+      .flex1{
          flex: 1;
       }
       .columu{
          flex-direction: column;
       }
+      .mg8{
+         margin: 8px;
+      }
+      .mgr8{
+         margin-right: 8px;
+      }
+      .mgt8{
+         margin-top: 8px;
+      }
     </style>
  </head>
  <body class="flex">
    <!-- 侧边栏 -->
-    <div style="width: 200px; class="baiSe">
+    <div style="width: 200px;" class="baiSe">
       <a href="https://space.bilibili.com/316352154?spm_id_from=333.1007.0.0">请关注喵，谢谢喵</a>
    </div>
     <!-- 主区域-->
@@ -39,15 +48,27 @@
 <!-- 内容栏-->
 <div class="flex1 flex">
    <!--左区-->
-   <div style="flex:3;" class="flex column">
+   <div style="flex:3;" class="flex-column mg8">
       <!--数据区-->
-   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/custom-thumb/img/2024/09/04/00/00/54/122115657_p0_custom1200.jpg" width="250px" height="250px"></div>
-   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/img-master/img/2019/02/11/00/00/03/73111581_p0_square1200.jpg" width="250px" height="250px"></div>
-   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/img-master/img/2017/07/07/00/18/56/63738701_p0_square1200.jpg" width="250px" height="250px"></div>
-   <div style="height: 250px;" class="flex1 baiSe"><img src="https://i.pixiv.re/c/250x250_80_a2/custom-thumb/img/2025/10/01/00/00/29/135729737_p0_custom1200.jpg" width="250px" height="250px"></div>
+      <div class="flex">
+   <div style="height: 250px;" class="flex1 baiSe mgr8"><img src="https://i.pixiv.re/c/250x250_80_a2/img-master/img/2021/04/19/00/00/06/89245497_p0_square1200.jpg" alt=""></div>
+   <div style="height: 250px;" class="flex1 baiSe mgr8"><img src="https://i.pixiv.re/c/250x250_80_a2/custom-thumb/img/2022/07/15/21/59/58/99745863_p0_custom1200.jpg" alt=""></div>
+   <div style="height: 250px;" class="flex1 baiSe mgr8"><img src="https://i.pixiv.re/c/250x250_80_a2/img-master/img/2023/01/21/14/41/54/104689578_p0_square1200.jpg" alt=""></div>
+   <div style="height: 250px;" class="flex1 baiSe mgr8"><img src="https://i.pixiv.re/c/250x250_80_a2/img-master/img/2025/07/07/06/10/53/132406777_p0_square1200.jpg" alt=""></div>
+      </div>
+      <!--列表区-->
+      <div class="flex-column">
+         <div style="height: 400px;" class="baiSe mgt8"></div>
+         <div style="height: 400px;" class="baiSe mgt8"></div>
+      </div>
 </div>
    <!--右区-->
-   <div style="flex:1;" class="flex column"></div>
+   <div style="flex:1;" class="flex-column mgr8 mgt8">
+      <!--提示区-->
+      <div style="height: 200px;" class="baiSe"></div>
+      <!--消息区-->
+      <div style="height: 400px;" class="baiSe"></div>
+   </div>
 </div>
     </div>
  </body> 
